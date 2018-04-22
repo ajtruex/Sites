@@ -1,0 +1,104 @@
+#
+# Apaxy by @adamwhitcroft
+#
+# For a full breakdown of the mod_autoindex module:
+# http://apache.org/docs/2.4/mod/mod_autoindex.html
+#
+
+# ENABLE INDEXING
+Options +Indexes
+
+# INDEX OPTIONS
+IndexOptions +Charset=UTF-8 +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription +NameWidth=* +IconsAreLinks
+
+# META VIEWPORT
+IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+
+# HIDE /theme DIRECTORY
+IndexIgnore .htaccess /theme
+
+#
+# GENERAL ICONS (BLANK, DIRECTORY, PARENT DIRECTORY)
+#
+
+#
+# Replace Users/andrewtruex/Sites with your directory URL eg:
+# If your directory is http://mywebsite.com/share/
+# you would change to:
+#
+# AddIcon /share/theme/icons/blank.png ^^BLANKICON^^
+#
+
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/blank.png ^^BLANKICON^^
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/folder.png ^^DIRECTORY^^
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/folder-home.png ..
+
+AddIconByType (TXT,/Users/andrewtruex/Sites/share/theme/icons/text.png) text/*
+AddIconByType (IMG,/Users/andrewtruex/Sites/share/theme/icons/image.png) image/*
+AddIconByType (SND,/Users/andrewtruex/Sites/share/theme/icons/audio.png) audio/*
+AddIconByType (VID,/Users/andrewtruex/Sites/share/theme/icons/video.png) video/*
+
+#
+# EXTENSION SPECIFIC ICONS
+#
+
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/archive.png .7z .bz2 .cab .gz .tar
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/audio.png .aac .aif .aifc .aiff .ape .au .flac .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/bin.png .bin .hex
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/bmp.png .bmp
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/c.png .c
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/calc.png .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/cd.png .iso
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/cpp.png .cpp
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/css.png .css .sass .scss
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/deb.png .deb
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/doc.png .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/draw.png .svg .svgz
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/eps.png .ai .eps
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/exe.png .exe
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/gif.png .gif
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/h.png .h
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/html.png .html .xhtml .shtml .htm .URL .url
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/ico.png .ico
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/java.png .jar
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/jpg.png .jpg .jpeg .jpe
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/js.png .js .json
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/markdown.png .md
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/package.png .pkg .dmg
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/pdf.png .pdf
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/php.png .php .phtml
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/playlist.png .m3u .m3u8 .pls .pls8
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/png.png .png
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/ps.png .ps
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/psd.png .psd
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/py.png .py
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/rar.png .rar
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/rb.png .rb
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/rpm.png .rpm
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/rss.png .rss
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/script.png .bat .cmd .sh
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/sql.png .sql
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/tiff.png .tiff .tif
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/text.png .txt .nfo .epub .mobi .azw
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/video.png .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/xml.png .xml
+AddIcon /Users/andrewtruex/Sites/share/theme/icons/zip.png .zip
+DefaultIcon /Users/andrewtruex/Sites/share/theme/icons/default.png
+
+#
+# THEME FILES
+#
+HeaderName /Users/andrewtruex/Sites/share/theme/header.html
+ReadmeName /Users/andrewtruex/Sites/share/theme/footer.html
+IndexStyleSheet "/Users/andrewtruex/Sites/share/theme/style.css"
+
+#
+# ERROR PAGES
+#
+
+ErrorDocument 400 /Users/andrewtruex/Sites/share/theme/400.html
+ErrorDocument 403 /Users/andrewtruex/Sites/share/theme/403.html
+ErrorDocument 404 /Users/andrewtruex/Sites/share/theme/404.html
+ErrorDocument 408 /Users/andrewtruex/Sites/share/theme/408.html
+ErrorDocument 500 /Users/andrewtruex/Sites/share/theme/500.html
+ErrorDocument 502 /Users/andrewtruex/Sites/share/theme/502.html
