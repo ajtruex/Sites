@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:338343044/sounds.rss" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:338343044/sounds.rss?before=347273037" rel="next" type="application/rss+xml"/>
+    <title>TruBoo</title>
+    <link>http://soundcloud.com/andrew-truex-49661371</link>
+    <pubDate>Tue, 17 Oct 2017 07:04:23 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Oct 2017 07:04:23 +0000</lastBuildDate>
+    <ttl>60</ttl>
+    <language>en</language>
+    <copyright>All rights reserved</copyright>
+    <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
+    <description>Podcast by Andrew Truex</description>
+    <itunes:subtitle>Podcast by Andrew Truex</itunes:subtitle>
+    <itunes:owner>
+      <itunes:name>Andrew Truex</itunes:name>
+      <itunes:email>feeds@soundcloud.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>Andrew Truex</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://i1.sndcdn.com/avatars-000340230430-thi42u-original.jpg"/>
+    <image>
+      <url>http://i1.sndcdn.com/avatars-000340230430-thi42u-original.jpg</url>
+      <title>Andrew Truex</title>
+      <link>http://soundcloud.com/andrew-truex-49661371</link>
+    </image>
+    <itunes:category text="Comedy"/>
+    <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/347273037</guid>
+      <title>Ari &amp; Joe Go On A Hike</title>
+      <pubDate>Tue, 17 Oct 2017 06:59:16 +0000</pubDate>
+      <link>https://soundcloud.com/andrew-truex-49661371/ari-joe-go-on-a-hike</link>
+      <itunes:duration>01:56:58</itunes:duration>
+      <itunes:author>Andrew Truex</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Ari &amp; Joe Go On A Hike by Andrew Truex</itunes:summary>
+      <itunes:subtitle>Ari &amp; Joe Go On A Hike by Andrew Truex</itunes:subtitle>
+      <description>Ari &amp; Joe Go On A Hike by Andrew Truex</description>
+      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/347273037-andrew-truex-49661371-ari-joe-go-on-a-hike.mp3" length="112697175"/>
+      <itunes:image href="http://i1.sndcdn.com/artworks-000247551081-i6pjgy-original.jpg"/>
+    </item>
+  </channel>
+</rss>
